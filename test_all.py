@@ -1,2 +1,3 @@
-def test_ass():
-    assert 1 == 2
+def test_set_creation():
+    created_set = {"a", "b", "c"}
+    assert created_set == {"a", "b", "c"}
