@@ -2,7 +2,7 @@ import pytest
 
 
 def test_set_creation():
-    created_set = {"a", "b", "c"}
+    created_set = set('abbc')
     assert created_set == {"a", "b", "c"}
 
 
@@ -37,3 +37,7 @@ def test_float_comparison():
     assert calculated_float == const_float
 
 
+def test_float_fromhex():
+    const_float_in_hex_format = '0x1.8666666666666p+3' # 12.2 hex repr
+    assert float.fromhex(const_float_in_hex_format) == 12.2
+    
