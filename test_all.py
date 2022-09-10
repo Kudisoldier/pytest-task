@@ -31,4 +31,9 @@ def test_float_convert(test_input, expected):
     assert isinstance(converted_to_float, float) and converted_to_float == expected
 
 
+def test_float_comparison():
+    calculated_float = 1/2
+    const_float = 0.5
+    assert calculated_float == const_float
+
 
